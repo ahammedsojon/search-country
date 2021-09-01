@@ -1,0 +1,38 @@
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#countries-container {
+    flex: 0 0 60%;
+}
+
+#countries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.country {
+    border: 2px solid salmon;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    /* background-color: rgb(226, 168, 223); */
+}
+#details-container {
+    flex: 0 0 30%;
+    padding-left: 5%;
+}
+#country-details {
+    border: 2px solid salmon;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: none;
+}
+#country-details.show{
+    display: block;
+}
+button{
+    cursor: pointer;
+}
